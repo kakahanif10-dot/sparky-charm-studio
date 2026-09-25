@@ -1,0 +1,11 @@
+{
+  "source": "github",
+  "repo": "https://github.com/kakahanif10-dot/hello-sparky-charm.git",
+  "capabilities": [
+    {"capability": "application code (landing, auth, AI workspace)", "source": "src/", "outcome": "copy into project", "status": "in_progress", "next_action": "copy files, install deps"},
+    {"capability": "schema: public.profiles + handle_new_user trigger", "source": "supabase/migrations", "outcome": "migrate", "status": "pending", "next_action": "enable Lovable Cloud and apply migration"},
+    {"capability": "auth (email/password via Lovable Cloud)", "source": "src/components/auth, src/routes/login.tsx", "outcome": "migrate", "status": "pending", "next_action": "enable Lovable Cloud"},
+    {"capability": "AI chat/generate/image via Lovable AI Gateway", "source": "src/routes/api/*, src/lib/gemini.server.ts", "outcome": "preserve", "status": "pending", "next_action": "uses LOVABLE_API_KEY server-side; verify after build"},
+    {"capability": "records/user export", "source": "none attached", "outcome": "pending", "status": "blocked", "next_action": "request CSV/JSON exports after preview"}
+  ]
+}
