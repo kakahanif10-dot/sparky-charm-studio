@@ -79,18 +79,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" },
       { name: "color-scheme", content: "dark" },
       { name: "theme-color", content: "#633CEA" },
-      { title: "SUPERINTELLIGENS — Build software with AI" },
+      { title: "nextwallstreet.com — Build software with AI" },
       {
         name: "description",
         content:
-          "SUPERINTELLIGENS is the AI software generator. Describe your idea in plain language and watch it become a real, deployable app.",
+          "nextwallstreet.com is the AI software generator. Describe your idea in plain language and watch it become a real, deployable app.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "SUPERINTELLIGENS — Build software with AI" },
+      { property: "og:title", content: "nextwallstreet.com — Build software with AI" },
       {
         property: "og:description",
         content:
-          "SUPERINTELLIGENS turns plain-language ideas into real, deployable software.",
+          "nextwallstreet.com turns plain-language ideas into real, deployable software.",
       },
       { name: "twitter:card", content: "summary_large_image" },
     ],

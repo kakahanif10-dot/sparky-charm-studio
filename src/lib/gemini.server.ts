@@ -48,7 +48,7 @@ async function callGateway(opts: GeminiOptions, stream: boolean) {
   })
   if (!res.ok) {
     const detail = await res.text().catch(() => '')
-    console.error(`[superintelligens] AI ${res.status}: ${detail.slice(0, 300)}`)
+    console.error(`[nextwallstreet.com] AI ${res.status}: ${detail.slice(0, 300)}`)
     if (res.status === 402) throw new Error('AI credits are used up. Add credits to keep chatting.')
     if (res.status === 429) throw new Error('Too many requests — wait a moment and try again.')
     throw new Error(`AI ${res.status}: ${detail.slice(0, 200)}`)

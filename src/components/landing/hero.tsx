@@ -100,7 +100,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.12 }}
           className="mt-4 max-w-md text-pretty text-xs leading-relaxed text-muted-foreground"
         >
-          SUPERINTELLIGENS is the AI software generator. Turn a plain-language idea into
+          nextwallstreet.com is the AI software generator. Turn a plain-language idea into
           a real, deployable app — with instant preview, live code, and one-click
           deploy.
         </motion.p>
@@ -137,7 +137,7 @@ export function Hero() {
                   aria-hidden
                   className="font-warm pointer-events-none absolute inset-0 text-left text-sm text-muted-foreground"
                 >
-                  Ask SUPERINTELLIGENS to build {typed}
+                  Ask nextwallstreet.com to build {typed}
                 </div>
               )}
             </div>

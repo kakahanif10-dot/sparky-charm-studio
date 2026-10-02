@@ -285,7 +285,7 @@ function DesktopFrame({
           <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
           <div className="ml-3 flex-1 truncate rounded-md bg-white/5 px-3 py-1 text-[11px] text-white/40">
-            {spec.hasContent ? `${slug(spec.appName)}.superintelligens.build` : 'preview.superintelligens.build'}
+            {spec.hasContent ? `${slug(spec.appName)}.nextwallstreet.com` : 'preview.nextwallstreet.com'}
           </div>
         </div>
 

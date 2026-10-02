@@ -37,7 +37,7 @@ export function SiteHeader() {
             'site-header-scrolled bg-background/70 backdrop-blur-xl',
         )}
       >
-        <Link href="/" aria-label="SUPERINTELLIGENS home">
+        <Link href="/" aria-label="nextwallstreet.com home">
           <SuperintelligensLogo className="transition-colors duration-500" />
         </Link>
 

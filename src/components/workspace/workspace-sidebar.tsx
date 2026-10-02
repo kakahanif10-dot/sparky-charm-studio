@@ -128,7 +128,7 @@ export function WorkspaceSidebar({
           <SuperintelligensMark className="h-7 w-7 shrink-0" />
           {!collapsed && (
             <span className="whitespace-nowrap text-sm font-semibold tracking-tight">
-              SUPERINTELLIGENS
+              nextwallstreet.com
             </span>
           )}
         </div>

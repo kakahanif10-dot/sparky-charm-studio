@@ -155,7 +155,7 @@ export function ConsultantPanel({
           <PromptInputTextarea
             value={prompt}
             onChange={(e) => onPromptChange(e.target.value)}
-            placeholder="Ask SUPERINTELLIGENS to build or change anything..."
+            placeholder="Ask nextwallstreet.com to build or change anything..."
             className="min-h-16 px-3 text-base md:text-sm"
           />
           <PromptInputFooter>

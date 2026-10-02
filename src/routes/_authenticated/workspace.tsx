@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-const title = 'Workspace — SUPERINTELLIGENS'
+const title = 'Workspace — nextwallstreet.com'
 const description =
   'Chat with the AI consultant, compile your app spec and preview it live on phone, tablet and desktop.'
 
@@ -48,7 +48,7 @@ type Session = {
   updated: number
 }
 
-const STORE_KEY = 'superintelligens.sessions.v1'
+const STORE_KEY = 'superintelligens.sessions.v1' // Keep existing saved sessions readable across the rename.
 
 // Persist sessions as a base64 string — lightweight, client-only, 0 MB server storage.
 function encode(sessions: Session[]): string {

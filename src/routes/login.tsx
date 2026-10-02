@@ -1,8 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-const title = 'Sign in — SUPERINTELLIGENS'
+const title = 'Sign in — nextwallstreet.com'
 const description =
-  'Sign in to SUPERINTELLIGENS and turn a plain-language idea into a deployable app in minutes.'
+  'Sign in to nextwallstreet.com and turn a plain-language idea into a deployable app in minutes.'
 
 export const Route = createFileRoute('/login')({
   head: () => ({

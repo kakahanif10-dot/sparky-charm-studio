@@ -1,7 +1,7 @@
 {
-  "name": "SUPERINTELLIGENS",
-  "short_name": "SUPERINTELLIGENS",
-  "description": "Describe an idea, generate a complete app, preview it live, and export the source with SUPERINTELLIGENS.",
+  "name": "nextwallstreet.com",
+  "short_name": "nextwallstreet.com",
+  "description": "Describe an idea, generate a complete app, preview it live, and export the source with nextwallstreet.com.",
   "start_url": "/workspace",
   "scope": "/",
   "display": "standalone",
