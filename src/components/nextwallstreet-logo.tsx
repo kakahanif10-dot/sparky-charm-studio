@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils'
-import whiteLogo from '@/assets/superintelligens-logo-white.png'
+import whiteLogo from '@/assets/nextwallstreet-logo-white.png'
 
-export function SuperintelligensMark({ className }: { className?: string }) {
+export function NextwallstreetMark({ className }: { className?: string }) {
   return (
     <img
       src={whiteLogo}
@@ -11,7 +11,7 @@ export function SuperintelligensMark({ className }: { className?: string }) {
   )
 }
 
-export function SuperintelligensLogo({
+export function NextwallstreetLogo({
   className,
   markClassName,
   wordmark = true,
@@ -22,7 +22,7 @@ export function SuperintelligensLogo({
 }) {
   return (
     <span className={cn('inline-flex items-center gap-2.5', className)}>
-      <SuperintelligensMark className={cn('h-8 w-8', markClassName)} />
+      <NextwallstreetMark className={cn('h-8 w-8', markClassName)} />
       {wordmark && (
         <span className="text-[15px] font-semibold text-foreground">nextwallstreet.com</span>
       )}

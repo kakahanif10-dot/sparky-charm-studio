@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { SuperintelligensMark } from '@/components/superintelligens-logo'
+import { NextwallstreetMark } from '@/components/nextwallstreet-logo'
 
 const STEPS = [
   'Menganalisis prompt',
@@ -43,7 +43,7 @@ export function ApkLoadingOverlay() {
           transition={{ duration: 6, repeat: Infinity, ease: 'linear' }}
           style={{ borderTopColor: 'var(--foreground)' }}
         />
-        <SuperintelligensMark className="h-14 w-14" />
+        <NextwallstreetMark className="h-14 w-14" />
       </div>
 
       <div className="flex flex-col items-center gap-2">
