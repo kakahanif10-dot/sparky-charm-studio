@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Paperclip, Smartphone } from 'lucide-react'
-import { SuperintelligensMark } from '@/components/superintelligens-logo'
+import { NextwallstreetMark } from '@/components/nextwallstreet-logo'
 import { cn } from '@/lib/utils'
 
 export type ChatMessage = {
@@ -39,11 +39,8 @@ export function ChatPanel({
   return (
     <div className="flex h-full flex-col bg-background/40">
       <div className="flex h-11 shrink-0 items-center gap-2 border-b border-border px-4 text-sm font-medium">
-        <SuperintelligensMark className="h-6 w-6 shrink-0" />
-        <span className="text-[15px] tracking-wide">
-          <strong className="font-extrabold">SUPER</strong>
-          <span className="font-medium">INTELLIGENS</span>
-        </span>
+        <NextwallstreetMark className="h-6 w-6 shrink-0" />
+        <span className="text-[15px] font-semibold">nextwallstreet.com</span>
       </div>
 
       <div className="thin-scroll flex-1 space-y-5 overflow-y-auto px-4 py-5">
@@ -59,7 +56,7 @@ export function ChatPanel({
               exit={{ opacity: 0 }}
               className="flex gap-3"
             >
-              <SuperintelligensMark className="h-7 w-7 shrink-0" />
+              <NextwallstreetMark className="h-7 w-7 shrink-0" />
               <div className="flex items-center gap-2 pt-1 text-sm text-muted-foreground">
                 <span className="inline-flex gap-1">
                   <span className="h-1.5 w-1.5 animate-bounce rounded-full bg-primary [animation-delay:-0.2s]" />
@@ -131,7 +128,7 @@ function Message({ message }: { message: ChatMessage }) {
       {isUser ? (
         <span className="mt-0.5 h-7 w-7 shrink-0 rounded-full bg-secondary" />
       ) : (
-        <SuperintelligensMark className="mt-0.5 h-7 w-7 shrink-0" />
+        <NextwallstreetMark className="mt-0.5 h-7 w-7 shrink-0" />
       )}
       <div className={cn('max-w-[85%]', isUser && 'text-right')}>
         <div

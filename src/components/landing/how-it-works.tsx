@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 const STEPS = [
   {
     step: 'Describe',
-    title: 'Tell SUPERINTELLIGENS your idea',
-    body: 'Write a prompt in plain language. Attach a screenshot or sketch if you have one — SUPERINTELLIGENS understands both.',
+    title: 'Tell nextwallstreet.com your idea',
+    body: 'Write a prompt in plain language. Attach a screenshot or sketch if you have one — nextwallstreet.com understands both.',
   },
   {
     step: 'Generate',

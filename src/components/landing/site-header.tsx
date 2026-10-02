@@ -2,7 +2,7 @@
 import Link from '@/components/link'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import { SuperintelligensLogo } from '@/components/superintelligens-logo'
+import { NextwallstreetLogo } from '@/components/nextwallstreet-logo'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 
@@ -37,8 +37,8 @@ export function SiteHeader() {
             'site-header-scrolled bg-background/70 backdrop-blur-xl',
         )}
       >
-        <Link href="/" aria-label="SUPERINTELLIGENS home">
-          <SuperintelligensLogo className="transition-colors duration-500" />
+        <Link href="/" aria-label="nextwallstreet.com home">
+          <NextwallstreetLogo className="transition-colors duration-500" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

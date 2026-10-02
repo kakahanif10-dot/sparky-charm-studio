@@ -1,4 +1,4 @@
-// SUPERINTELLIGENS — Conversational consultant endpoint.
+// nextwallstreet.com — Conversational consultant endpoint.
 // Powers real, responsive back-and-forth chat with the AI consultant (distinct
 // from /api/generate, which compiles a full app spec). Runs on the AI SDK
 // through the Vercel AI Gateway (zero-config auth, no provider key) and always
@@ -30,7 +30,7 @@ function systemPrompt(spec: SpecContext): string {
     ? `The user is currently working on an app called "${spec.appName}" in the "${spec.industry}" vertical (template: ${spec.template}). Ground your answers in that app when relevant.`
     : `The user has not generated an app yet. Encourage them to describe the product they want to build.`
 
-  return `You are the SUPERINTELLIGENS AI Consultant — a warm, sharp, senior product engineer having a live chat with a builder. ${ctx}
+  return `You are the nextwallstreet.com AI Consultant — a warm, sharp, senior product engineer having a live chat with a builder. ${ctx}
 
 Rules:
 - Talk like a real person, not a manual. Use natural, warm phrasing, contractions, and a bit of personality. React to what the user actually said.
@@ -86,7 +86,7 @@ async function streamReply(
   }
 
   // Every model failed — degrade to a local reply, streamed for a human feel.
-  console.error('[superintelligens] All Gemini models failed, using local fallback:', errors.join(' | '))
+  console.error('[nextwallstreet.com] All Gemini models failed, using local fallback:', errors.join(' | '))
   const reply = localReply(spec, turns)
   for (const word of reply.split(' ')) {
     controller.enqueue(encoder.encode(word + ' '))
@@ -111,7 +111,7 @@ function localReply(spec: SpecContext, turns: ChatTurn[]): string {
       : `Happy to help — describe the product you have in mind (industry, audience, key action) and I'll brand and compile a working preview.`
   }
   if (/\b(hi|hello|hey|halo|hai)\b/.test(last)) {
-    return `Hey! I'm your SUPERINTELLIGENS consultant. Describe an app idea and I'll detect the industry, brand it, and build a live preview.`
+    return `Hey! I'm your nextwallstreet.com consultant. Describe an app idea and I'll detect the industry, brand it, and build a live preview.`
   }
   return spec.hasContent
     ? `Understood. Tell me what you'd like to adjust on ${app} and I'll take it from there.`
@@ -138,7 +138,7 @@ async function POST(req: Request) {
     async start(controller) {
       try {
         const source = await streamReply(spec, turns, controller, encoder)
-        console.log('[superintelligens] Chat answered by:', source)
+        console.log('[nextwallstreet.com] Chat answered by:', source)
       } catch (error) {
         console.log('[v0] Chat stream failed, using local reply:', (error as Error)?.message)
         controller.enqueue(encoder.encode(localReply(spec, turns)))

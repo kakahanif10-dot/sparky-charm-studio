@@ -25,6 +25,7 @@ import {
 } from '@/components/ai-elements/prompt-input'
 import { Shimmer } from '@/components/ai-elements/shimmer'
 import { Button } from '@/components/ui/button'
+import { NextwallstreetLogo } from '@/components/nextwallstreet-logo'
 import { TEMPLATE_LABELS, type DesignSpec } from '@/lib/design'
 import {
   COMPILE_STEPS,
@@ -78,7 +79,8 @@ export function ConsultantPanel({
 
   return (
     <div className="flex h-full flex-col bg-background">
-      <div className="flex h-11 shrink-0 items-center justify-end bg-background px-3">
+      <div className="flex h-11 shrink-0 items-center justify-between bg-background px-3">
+        <NextwallstreetLogo className="min-w-0" markClassName="h-5 w-5 shrink-0" />
         <Button
           variant="ghost"
           size="icon-sm"
@@ -155,7 +157,7 @@ export function ConsultantPanel({
           <PromptInputTextarea
             value={prompt}
             onChange={(e) => onPromptChange(e.target.value)}
-            placeholder="Ask SUPERINTELLIGENS to build or change anything..."
+            placeholder="Ask nextwallstreet.com to build or change anything..."
             className="min-h-16 px-3 text-base md:text-sm"
           />
           <PromptInputFooter>

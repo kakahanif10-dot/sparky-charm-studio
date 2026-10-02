@@ -1,4 +1,4 @@
-// SUPERINTELLIGENS — Universal Context-Aware UI/UX design model.
+// nextwallstreet.com — Universal Context-Aware UI/UX design model.
 // A single generation returns an industry-aware spec: the AI detects the
 // industry from the prompt, picks a functional multi-page `template`, and
 // emits a matching hex `palette` + an industry-specific `catalog`.
@@ -172,7 +172,7 @@ export const TEMPLATE_LABELS: Record<Template, string> = {
 }
 
 export const DEFAULT_SPEC: DesignSpec = {
-  appName: 'SUPERINTELLIGENS',
+  appName: 'nextwallstreet.com',
   industry: '',
   template: 'generic',
   palette: TEMPLATE_PALETTES.generic,

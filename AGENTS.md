@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep the existing logo artwork when changing the brand label; the asset files may be renamed, but their visual content should remain intact.
+- Preserve the legacy workspace storage key across branding changes so existing browser sessions remain available.
