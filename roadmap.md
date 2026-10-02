@@ -1,4 +1,5 @@
 # Roadmap
 
+- [ ] Change all SUPERINTELLIGENS branding to nextwallstreet.com without altering the logo artwork
 - [x] Remove arrow send button from chat composer
-- [ ] Show SUPERINTELLIGENS logo/text on the left (chat header)
+- [ ] Show nextwallstreet.com logo/text on the left (chat header)
