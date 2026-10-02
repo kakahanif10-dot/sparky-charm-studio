@@ -5,7 +5,7 @@ export function SuperintelligensMark({ className }: { className?: string }) {
   return (
     <img
       src={whiteLogo}
-      alt="SUPERINTELLIGENS logo"
+      alt="nextwallstreet.com logo"
       className={cn('brand-mark inline-block object-contain', className)}
     />
   )
@@ -24,10 +24,7 @@ export function SuperintelligensLogo({
     <span className={cn('inline-flex items-center gap-2.5', className)}>
       <SuperintelligensMark className={cn('h-8 w-8', markClassName)} />
       {wordmark && (
-        <span className="text-[15px] text-foreground">
-          <strong className="font-extrabold">SUPER</strong>
-          <span className="font-medium">INTELLIGENS</span>
-        </span>
+        <span className="text-[15px] font-semibold text-foreground">nextwallstreet.com</span>
       )}
     </span>
   )

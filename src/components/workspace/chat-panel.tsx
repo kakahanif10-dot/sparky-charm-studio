@@ -40,10 +40,7 @@ export function ChatPanel({
     <div className="flex h-full flex-col bg-background/40">
       <div className="flex h-11 shrink-0 items-center gap-2 border-b border-border px-4 text-sm font-medium">
         <SuperintelligensMark className="h-6 w-6 shrink-0" />
-        <span className="text-[15px] tracking-wide">
-          <strong className="font-extrabold">SUPER</strong>
-          <span className="font-medium">INTELLIGENS</span>
-        </span>
+        <span className="text-[15px] font-semibold">nextwallstreet.com</span>
       </div>
 
       <div className="thin-scroll flex-1 space-y-5 overflow-y-auto px-4 py-5">
